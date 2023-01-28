@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <form class="contact__form">
+            <h2>Choose Account Type</h2>
+
+            <div class="options">
+                <input type="radio" name="option" id="individual">
+                <label for="individual">
+                    <span class="icon__select"><i class="fas fa-user"></i></span>
+                    <h3>Customer</h3>
+                    <span class="selected"><i class="fas fa-check"></i></span>
+                </label>
+
+                <input type="radio" name="option" id="company">
+                <label for="company">
+                    <span class="icon__select"><i class="fas fa-briefcase"></i></span>
+                    <h3>Farmer</h3>
+                    <span class="selected"><i class="fas fa-check"></i></span>
+                </label>
+            </div>
+
+            <span class="message__selection"></span>
+
+            <div class="email">
+              <i class="fa-sharp fa-solid fa-phone"></i>
+                <input type="text" placeholder="Phone Number" id="email__field">
+                <span class="field__name">Phone Number</span>
+                <small class="email__alert">Please enter a valid Phone Number</small>
+            </div>
+
+            <div class="bottom">
+              
+
+              <a href="otp.html"><button type="submit" class="submitBtn">Get OTP</button></a>
+          </div>
+            
+        </form>
+    </div>
+
+    <script src="mainlogin.js"></script>
+</body>
+</html>

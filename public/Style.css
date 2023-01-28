@@ -1,0 +1,70 @@
+Body {
+    Margin: 0;
+    Padding: 0;
+    Height: 100vh;
+    Background: #000000; /* Fallback For Old Browsers */
+    Background: -Webkit-Linear-Gradient(
+      To Right,
+      #434343,
+      #000000
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    Background: Linear-Gradient(
+      To Right,
+      #434343,
+      #000000
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .Container {
+    Display: Flex;
+    Flex-Flow: Column;
+    Height: 100%;
+    Align-Items: Space-Around;
+    Justify-Content: Center;
+  }
+  
+  .UserInput {
+    Display: Flex;
+    Justify-Content: Center;
+  }
+  
+  Input {
+    Margin: 10px;
+    Height: 35px;
+    Width: 65px;
+    Border: None;
+    Border-Radius: 5px;
+    Text-Align: Center;
+    Font-Family: Arimo;
+    Font-Size: 1.2rem;
+    Background: #Eef2f3;
+  }
+  
+  H1 {
+    Text-Align: Center;
+    Font-Family: Arimo;
+    Color: Honeydew;
+  }
+  
+  Button {
+    Width: 150px;
+    Height: 40px;
+    Margin: 25px Auto 0px Auto;
+    Font-Family: Arimo;
+    Font-Size: 1.1rem;
+    Border: None;
+    Border-Radius: 5px;
+    Letter-Spacing: 2px;
+    Cursor: Pointer;
+    Background: #616161; /* Fallback For Old Browsers */
+    Background: -Webkit-Linear-Gradient(
+      To Right,
+      #9bc5c3,
+      #616161
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    Background: Linear-Gradient(
+      To Right,
+      #9bc5c3,
+      #616161
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
