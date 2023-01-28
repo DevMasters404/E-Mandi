@@ -1,4 +1,10 @@
+:root{
+  --primary-color: #e28838;
+  --secondary-color: #fbebda;
+}
+
 body {
+  background-color: var(--secondary-color);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +16,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.invert-color{
+  filter: invert(100%);
 }
