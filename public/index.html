@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Mandi</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<link
     href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;0,900;1,400&family=Open+Sans:wght@300;500;600;700&family=Pacifico&family=Poppins:wght@100;300;400;500;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/bcf7f44089.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://kit.fontawesome.com/bcf7f44089.css" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="../resources/images/black_logo.png" width="30" height="30"
-                class="d-inline-block align-top" alt="">
+            <img src="../resources/images/colour.png" width="30" height="30" class="d-inline-block align-top mr-1"
+                alt="">
             E-Mandi
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -28,12 +29,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <form class="d-flex mx-auto" role="search">
-                <input class="form-control me-2 mr-1" type="search" placeholder="Search" aria-label="Search" style="font-family: 'Roboto';">
-                <button class="btn btn-outline-light btn-sm" type="submit" style="font-family: 'Roboto';">Search</button>
-              </form>
+                <input class="form-control me-2 mr-1" type="search" placeholder="Search" aria-label="Search"
+                    style="font-family: 'Roboto';">
+                <button class="btn btn-outline-light btn-sm" type="submit"
+                    style="font-family: 'Roboto';">Search</button>
+            </form>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="login.html">Login/Sign UP <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="login.html">Login/Sign UP</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact Us</a>
@@ -42,74 +45,194 @@
                     <a class="nav-link" href="#">My Orders</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="../resources/images/cart-shopping-solid.svg" alt="hi" style="height: 25px;width: 25px;filter: invert(1);"></a>
+                    <a class="nav-link" href="#"><img src="../resources/images/shopping-cart.png" alt="hi"
+                            style="height: 25px;filter: invert(1);"></a>
                 </li>
             </ul>
-            
+
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="container d-flex main-section">
+        <div class="card" style="width: 18rem;">
+            <img src="../resources/images/pexels-pixabay-265216.jpg" class="card-img-top" alt="..." style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Grains</h5>
+                <p class="card-text">Discover the freshest grains for your pantry!</p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../resources/images/pexels-mark-stebnicki-2255935.jpg" class="card-img-top" alt="..." style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Vegetables</h5>
+                <p class="card-text">Farm-fresh vegetables to add color and nutrition to your meals.</p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../resources/images/pexels-jane-doan-1132047.jpg" class="card-img-top" alt="..." style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Fruits</h5>
+                <p class="card-text">Juicy fruits picked at peak ripeness for maximum flavor and nutrition.</p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+        <!-- Make 3 cards of fruit vegetables and grains -->
+
+    </div>
+
+    <!-- Carousel -->
+    <section id="testimonials">
+
+        <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h2>E-mandi is a game changer for small farmers like me. I can sell my produce directly to customers and make more profit.</h2>
+                    <img src="../resources/images/pexels-rihan-(ishan)-das-2519332.jpg" alt="dog-profile" style="object-fit: cover;">
+                    <em>Mehul Singh, Gujarat</em>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="testimonial-text">E-mandi is the go-to place for fresh, locally sourced fruits and vegetables. The quality is unbeatable!</h2>
+                    <img class="testimonial-image" src="../resources/images/pexels-ketut-subiyanto-4307869.jpg" style="object-fit: cover;"
+                        alt="lady-profile">
+                    <em>Dheeraj, Delhi</em>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-    </nav>
-    
-    
+    </section>
+
+    <!-- FAQ Section -->
+
+    <h1 class="main-headers mx-5 mt-5" style="font-family: 'Roboto';">FAQ Section</h1>
+    <div class="accordion mx-3" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Footer Section -->
 
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top mx-0">
         <div class="col mb-3">
-          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <p class="text-muted">© 2022</p>
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <p class="text-muted">© 2022</p>
         </div>
-    
+
         <div class="col mb-3">
-    
+
         </div>
-    
+
         <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
         </div>
-    
+
         <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
         </div>
-    
+
         <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
         </div>
-      </footer>
+    </footer>
 
 
     <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
