@@ -5,6 +5,10 @@
 }
 
 :root{
+    --primary-color: #1D7874;
+    --secondary-color: #87A33040;
+    --tertiary-color: #87A33030;
+    --text-color: #F5FBEF;
     --light-blue:#00b4d8;
     --blue:#0077b6;
     --dark-blue:#03045e;
@@ -37,8 +41,8 @@ form{
 }
 
 form h2{
-    color: var(--light-blue);
-    font-weight: 300;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 /* OPTIONS SECTION */
@@ -56,7 +60,7 @@ label{
     position: relative;
     height: 200px;
     width: 180px;
-    border: 1px solid var(--light-blue);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -68,10 +72,20 @@ label{
 
 label .icon__select{
     font-size: 40px;
-    color: var(--dark-blue);
-    border-bottom: 2px solid var(--dark-blue);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
     padding: 0.5rem 1rem;
     margin-bottom: 10px;
+}
+
+label span{
+    height: 20px;
+    width: 20px;
+}
+label span img{
+    height: 100%;
+    filter: invert(1);
+    /* width: 20px; */
 }
 
 .selected{
@@ -80,19 +94,22 @@ label .icon__select{
     right: -5px;
     padding: 5px;
     border-radius: 50%;
-    color: white;
-    background-color: var(--blue);
+    color: var(--primary-color);
+    background-color: var(--primary-color);
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
     display: none;
 }
 
 input[type="radio"]:checked + label{
-    background-color: var(--light-blue);
-    color: white;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 input[type="radio"]:checked + label .selected{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /* MESSAGE SECTION */
@@ -137,7 +154,7 @@ input[type="radio"]:checked + label .selected{
 
 .email:focus-within,
 .password:focus-within{
-    border: 1px solid var(--blue);
+    border: 1px solid var(--primary-color);
 }
 
 .email:focus-within .field__name,
@@ -161,7 +178,7 @@ input[type="radio"]:checked + label .selected{
     top: -10px;
     left: 20px;
     font-size: 10px;
-    background-color: var(--blue);
+    background-color: var(--primary-color);
     color: white;
     padding: 3px 6px;
     border-radius: 3px;
@@ -207,7 +224,7 @@ input[type="radio"]:checked + label .selected{
 .bottom button{
     border: none;
     padding: 10px 25px;
-    background-color: var(--light-blue);
+    background-color: var(--primary-color);
     color: white;
     border-radius: 5px;
     font-size: 16px;
