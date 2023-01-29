@@ -54,6 +54,12 @@
 .navbar-toggler:focus {
   outline: none;
 }
+.nav-opacity{
+  opacity: 0.6;
+}
+.nav-opacity:hover{
+  opacity: 0.9;
+}
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -87,11 +93,6 @@
 }
 
 
-
-  footer{
-    /* margin: 0; */
-    background-color: var(--primary-color);
-}
 
 .carousel-item{
   height: 600px;
@@ -170,4 +171,24 @@
   height: 700px;
   justify-content: space-evenly;
   align-items: center;
+}
+
+
+/* footer section */
+
+footer{
+  /* margin: 0; */
+  background-color: var(--primary-color);
+}
+footer .text-muted{
+  color: var(--text-color)!important;
+  opacity: 0.6;
+}
+footer h5{
+  color: var(--text-color) ;
+  opacity: 0.9;
+}
+footer a{
+  color: var(--text-color);
+  opacity: 0.6;
 }

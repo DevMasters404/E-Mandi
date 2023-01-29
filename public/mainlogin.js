@@ -4,6 +4,28 @@ const businessOption = document.querySelector('#company');
 individualOption.addEventListener('click', displayMessage);
 businessOption.addEventListener('click', displayMessage);
 
+
+//MYSQL
+// var mysql = require('mysql');
+
+
+
+// PHONE NUMBER VALIDATION
+function handlePhone(){
+    if(!document.querySelectorAll('input')[1].checked && !document.querySelectorAll('input')[0].checked){
+        document.querySelector('span.message__selection').textContent=("Select Your Identity")
+    }
+    else if(!document.querySelectorAll('input')[1].checked){
+        document.querySelector('span.message__selection').textContent=("You are a Individual")
+    }
+    else{
+        document.querySelector('span.message__selection').textContent=("You are a Farmer")
+    }
+    let otp=Math.floor(100000+Math.random()*1000000);
+    console.log(document.querySelector('#email__field').value);
+    console.log(otp);
+}
+
 function displayMessage(){
     const message = document.querySelector('.message__selection');
 
@@ -22,7 +44,7 @@ const submitBtn = document.querySelector('.submitBtn');
 const emailAlert = document.querySelector('.email__alert');
 const passwordAlert = document.querySelector('.password__alert');
 
-form.addEventListener('submit', validateForm);
+// form.addEventListener('submit', validateForm);
 
 function validateForm(e){
     if(email.value === ''){

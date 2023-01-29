@@ -11,18 +11,18 @@
 </head>
 <body>
     <div class="container">
-        <form class="contact__form">
+        <form class="contact__form" method="post" >
             <h2>Choose Account Type</h2>
 
             <div class="options">
-                <input type="radio" name="option" id="individual">
-                <label for="individual">
+                <input type="radio" name="option" id="individual" value="individual">
+                <label for="individual" >
                     <img src="../resources/images/consumer.png" style="height:40%;margin-bottom: 10px;" alt="">
                     <h3>Customer</h3>
                     <span class="selected"><img src="../resources/images/check.png" alt=""></span>
                 </label>
 
-                <input type="radio" name="option" id="company">
+                <input type="radio" name="option" id="company" value="farmer">
                 <label for="company">
                     <img src="../resources/images/branch-with-leaves.png" style="height:40%;margin-bottom: 10px;" alt="">
                     <h3>Farmer</h3>
@@ -34,15 +34,13 @@
 
             <div class="email">
               <img src="../resources/images/phone-call.png" alt="" style="height: 50%;position : absolute;left: 10px;top:50%; transform: translateY(-50%);">
-                <input type="text" placeholder="Phone Number" id="email__field">
+                <input type="text" name="phoneno" placeholder="Phone Number" id="email__field">
                 <span class="field__name">Phone Number</span>
                 <small class="email__alert">Please enter a valid Phone Number</small>
             </div>
 
             <div class="bottom">
-              
-
-              <a href="otp.html"><button type="submit" class="submitBtn">Get OTP</button></a>
+                    <button type="submit" onclick="handlePhone()">Get OTP</button>
           </div>
             
         </form>
