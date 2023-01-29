@@ -13,6 +13,7 @@ let genotp;
 let check = 1;
 let prevphone = 0;
 let isRegisterd;
+let checkfarmer = false;
 
 
 // const home = fs.readFileSync('index.html');
@@ -36,13 +37,19 @@ app.all('/login.html', (req, res, next) => {
     let phone = req.body.phoneno;
     let option = req.body.option;
     prevphone = phone;
+    if (option === 'farmer'){
+      checkfarmer = true;
+    }
     console.log(`Phone: ${phone} Option: ${option}`);
     let auth;
     con.query(`select 1 from fdata where phoneno = ${phone}`, function (err, result) {
       if (err) throw err;
       console.log(result.length);
       auth = result.length;
-      if (auth === 1) {
+      if(auth == 1 && checkfarmer){
+        res.redirect('admindashboard.html')
+      }
+      else if (auth === 1) {
         res.redirect('index.html')
       } 
       else {
