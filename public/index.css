@@ -9,6 +9,41 @@
     --tertiary-color: #87A33030;
     --text-color: #F5FBEF;
   }
+
+  #google_translate_element{
+    /* visibility: hidden; */
+    color: rgba(0, 0, 0, 0)!important;
+    opacity: 1;
+    position: relative;
+  }
+  select{
+    height: 50px;
+    outline: none;
+    color: white;
+    background: none;
+    border: none;
+  }
+  .goog-te-button{
+    position: absolute!important;
+    top: 20px!important;
+  }
+  select option{
+    color: black;
+  }
+  div.skiptranslate.goog-te-gadget{
+    display: block!important;
+    visibility: show!important;
+    position: absolute;
+    top: -30px;
+    height: 50px;
+  }
+  /* #0.targetLanguage{
+    display: block!important;
+  } */
+  #google_translate_element span{
+    display: none !important;
+    visibility: hidden !important;
+  }
   .invert{
     filter: invert(1);
   }
@@ -102,6 +137,12 @@
   height: 100%;
   width: 100%;
 }
+
+/* .carousel-caption {
+  color: wheat;
+  text-shadow: 0 0 3px 5px black;
+  /* text-shadow: var(--primary-color) 1px 1px 1px ; 
+} */
 
 /* Accordion FAQ */
 

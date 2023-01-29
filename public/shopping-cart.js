@@ -12,11 +12,13 @@ const countTheSumPrice = function () { // 4
 	productsInCart.forEach(item => {
 		sum += item.price;
 	});
+	console.log(sum)
 	return sum;
 }
 
 const updateShoppingCartHTML = function () {  // 3
 	localStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
+	console.log(productsInCart);
 	if (productsInCart.length > 0) {
 		let result = productsInCart.map(product => {
 			return `
@@ -35,7 +37,7 @@ const updateShoppingCartHTML = function () {  // 3
 		});
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
-		cartSumPrice.innerHTML = '$' + countTheSumPrice();
+		cartSumPrice.innerHTML = '₹' + countTheSumPrice();
 
 	}
 	else {
@@ -61,7 +63,8 @@ products.forEach(item => {   // 1
 		if (e.target.classList.contains('addToCart')) {
 			const productID = e.target.dataset.productId;
 			const productName = item.querySelector('.productName').innerHTML;
-			const productPrice = item.querySelector('.priceValue').innerHTML;
+			const productPrice = item.querySelector('.priceValue').innerHTML.slice(0,2);
+			console.log('price is ' + document.querySelector('.priceValue').innerHTML.slice(0,2));
 			const productImage = item.querySelector('img').src;
 			let product = {
 				name: productName,
@@ -89,6 +92,7 @@ parentElement.addEventListener('click', (e) => { // Last
 				else if (isMinusButton) {
 					productsInCart[i].count -= 1
 				}
+				console.log('price is ' + productsInCart[i].price);
 				productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
 
 			}

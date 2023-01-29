@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --primary-color: #1D7874;
+    --secondary-color: #87A33040;
+    --tertiary-color: #87A33030;
+    --text-color: #F5FBEF;
+  }
+  #hearderSlide{
+    background-color: white;
+  }
